@@ -7,3 +7,4 @@ Desired output:
     'looking', '->', 'looking for some education'
     'for', -> 'looking for some education'
     'wanna',->'i don't even wanna waste your time'
+    ...
