@@ -1,10 +1,10 @@
 def search(userlist):
-    target=[i.strip().lower() for i in userlist]
-    res=[]
+    target=[i.strip().lower() for i in userlist]   #pre-process user's list to strip the leading and trailing space and lowercase the letters
+    res=[]   #create an empty list for the def to return the value
     with open('F:/adele.txt','r') as file:
-        for line in file:
+        for line in file:      #read in all the lines in the txt file and lowercase the letters
             line=line.strip().lower()
-            for word in target:
+            for word in target:  #compare every word in user's list to the lines
                 if word in line:
                     res.append((word+'->'+line))
     return res
