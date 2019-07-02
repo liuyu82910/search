@@ -1,4 +1,4 @@
-# search
+# define a simple search function
 search keywords
 Define a search function in Python. Goal is to output the keywords from a list and the sentence(s) from adele.txt that contain(s) the keywords.
 
