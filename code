@@ -1,0 +1,10 @@
+def search(userlist):
+    target=[i.strip().lower() for i in userlist]
+    res=[]
+    with open('F:/adele.txt','r') as file:
+        for line in file:
+            line=line.strip().lower()
+            for word in target:
+                if word in line:
+                    res.append((word+'->'+line))
+    return res
